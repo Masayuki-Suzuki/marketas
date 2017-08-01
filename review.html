@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="One of Victoria&#039;s Finest, Marketa&#039;s B&amp;B is located steps from the Inner Harbour and Downtown Victoria, Vancouver Island, BC - Reservations - 250-384-9844"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>Marketa's Bed & Breakfast in Downtown Victoria BC, British Columbia</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <!-- Date Reset Function -->
+  <script>
+    window.onload = function(){
+      var mm = '';
+      var ddi = 1;
+      var ddo = 1;
+      var month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      var now = new Date();
+      for( var i = 0; i < 12; i++){
+        if( i == now.getMonth() ){
+          mm = month[i];
+          document.getElementById('in-month').value = mm;
+          document.getElementById('out-month').value = mm;
+          break;
+        }
+      }
+      ddi = ("0" + now.getDate()).slice(-2);
+      ddo = ("0" + (now.getDate() + 1)).slice(-2);
+      document.getElementById('in-day').value = ddi;
+      document.getElementById('out-day').value = ddo;
+      console.log(mm);
+    }
+  </script>
+  <!-- Date Reset Function -->
+</head>
+<body class="more subPage">
+  <div class="mainVisual">
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1><img src="img/logo-wh.svg" alt="Marketa's Bed & Breakfast"></h1>
+        </a>
+      </div>
+      <nav>
+        <input type="radio" id="spBtn__off" name="btn" checked>
+        <input type="radio" id="spBtn__on" name="btn">
+        <div class="spNav sp">
+          <ul>
+            <li>
+              <a class="spNav__fb" href="https://www.facebook.com/MarketasBedandBreakfast/" target="_blank"></a>
+            </li>
+            <li>
+              <a class="spNav__tw" href="https://twitter.com/MissMarketa" target="_blank"></a>
+            </li>
+            <li><label class="navBtnSp" for="spBtn__on"></label></li>
+          </ul>
+        </div>
+        <ul class="nav__body">
+          <li class="nav__list close sp">
+            <label for="spBtn__off"></label>
+          </li>
+          <li class="nav__list">
+            <a class="nav__line nav__line--home" href="index.html">HOME</a>
+          </li>
+          <li class="nav__list">
+            <a href="room.html">ROOM &amp; RATES</a>
+          </li>
+          <li class="nav__list">
+            <a href="">BREAKFAST</a>
+          </li>
+          <li class="nav__list">
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="book">
+      <h2 class="bookHd">BOOK NOW <span class="bookHd__span">BEST PRICE ONLINE</span></h2>
+      <div class="book__box">
+        <div class="date">
+          <div class="in">
+            <h3>CHECK IN</h3>
+            <input id="in-day" class="day" type="text" value="" readonly>
+            <input id="in-month" class="month" type="text" value="" readonly>
+            <input type="text" class="picker" value="" readonly>
+          </div>
+          <div class="out">
+            <h3>CHECK OUT</h3>
+            <input id="out-day" class="day" type="text" value="" readonly>
+            <input id="out-month" class="month" type="text" value="" readonly>
+            <input type="text" class="picker" value="" readonly>
+          </div>
+        </div>
+        <div class="btn">
+          <a href="#">CHECK AVAILABLITY<span>BEST PRICE GARANTEED</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="main">
+    <section class="review">
+      <hgroup>
+        <h2 class="main__heading heading__underLine heading__underLine--red heading__underLine--rvw">reviews</h2>
+        <h3 class="review__heading">As written up in Country Pleasures Magazine <span>- By Mary Mendoza</span></h3>
+      </hgroup>
+      <div class="main__box main__box--review">
+        <div class="review__text">
+          <p class="box__paragraph">
+            The odds of me ever getting to Prague are about the same as Martha Stewart swimming the English Channel clad only in a KMart towel. Happily I can experience some of the flavor of that beautiful Czech city with a visit to Marketa’s Bed and Breakfast in Victoria.
+          </p>
+          <p class="box__paragraph ">
+            Marketa’s possesses the qualities one might find in a small Eastern European inn–at bargain prices. Its complete lack of pretentiousness and fun-filled atmosphere put it on the top of my list of favorite places to stay in Victoria.
+          </p>
+          <p class="box__paragraph ">
+            Then there is the woman behind it all, innkeeper Marketa Clark. A stunning Czech native, married to a Canadian computer-guru and mother to a young son, Marketa devotes her spare time to her great passion – painting. She is an accomplished artist whose works have appeared in galleries in Europe and British Columbia. A number of her original oil paintings are displayed at the B&B.
+          </p>
+          <p class="box__paragraph">Guest rooms range from modest sleeping quarters geared for those on a budget, to more expensive rooms with ensuite baths on the main floor, to elegant chambers complete with fireplace, Jacuzzi for two and hand-painted four poster beds.</p>
+          <p class="box__paragraph">Marketa worked with a local designer to achieve a timeless romantic look and feel in the upstairs rooms, recently renovated and redecorated in rich green, soft yellow and gold accents and classic furnishings.</p>
+          <p class="box__paragraph">Mornings at Marketa’s are laughter-filled occasions, with guests gathering over a sumptuous meal to swap travel experiences and compare notes on that day’s itinerary. College-age girls make sure no juice glass or coffee cup is left empty, while Marketa presides over the carefully controlled pandemonium in the kitchen. In the summer breakfast is served on the deck in view of the roses in the backyard.</p>
+          <p class="box__paragraph">Guests can also relax in the lounge, enjoy the fireplace and “tele” and sample some of Marketa’s port wine. She’s recently gotten into wine making, using California grapes to produce some very tasty red, white and port wines.</p>
+          <p class="box__paragraph">Guests can also relax in the lounge, enjoy the fireplace and “tele” and sample some of Marketa’s port wine. She’s recently gotten into wine making, using California grapes to produce some very tasty red, white and port wines.</p>
+          <p class="box__paragraph">This being Victoria there’s a wealth of sightseeing, dining and shopping possibilities. The border crossing may take a bit longer (be sure to bring the proper documents), but the U.S. dollar buys so much more in Canada it’s worth the effort.</p>
+          <p class="box__paragraph">Marketa’s Bed and Breakfast is located close to the U.S. ferries and within walking distance to downtown Victoria. And it’s much easier to get to than Prague, especially if you take the ferry instead of swimming.</p>
+        </div>
+        <div class="review__img">
+          <img src="img/trip-advisor-2014.png" alt="trip advisor 2014 winner">
+          <div>
+            <a class="box__btn box__btn--dkbl" href="index.html#review">BACK TO TOP</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="main__heading main__heading--contact heading__underLine heading__underLine--red heading__underLine--cnt">contact us</h2>
+      <form class="form" action="javascript:void(0);">
+        <label for="">
+          <input class="cont__ipt cont__ipt--name" type="text" placeholder="YOUR NAME">
+        </label>
+        <label for="">
+          <input class="cont__ipt" type="email" placeholder="E-MAIL ADDRESS">
+        </label>
+        <label for="">
+          <input class="cont__ipt" type="tel" placeholder="YOUR PHONE NUMBER">
+        </label>
+        <textarea class="cont__ipt" placeholder="YOUR MESSAGE"></textarea>
+        <button class="box__btn box__btn--wh" type="submit">SUBMIT</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="ft__logo">
+      <img src="img/logo-bk.svg" alt="Marketa's Bed & Breakfast">
+    </div>
+    <address>
+      <dl>
+        <dt>Marketa’s Bed and Breakfast</dt>
+        <dd>239 Superior St., Victoria, BC V8V 1T4, Canada</dd>
+        <dd>250-384-984</dd>
+      </dl>
+    </address>
+    <div class="sns">
+      <ul>
+        <li>
+          <a href="">
+            <img src="img/fb-ico.svg" alt="facebook">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/tw-ico.svg" alt="twitter">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- DatePicker -->
+  <script>
+    $(function(){
+      if($(window).width() < 960 ){
+        $('.picker').datepicker({
+          minDate:'0y',
+          maxDate:'6m',
+          showButtonPanel:true,
+          numberOfMonths:1,
+          dayNamesShort: ['S','M','T','W','T','F','S'],
+          dayNamesMin: ['S','M','T','W','T','F','S'],
+          closeText:'Close',
+          beforeShow:
+            function(input,inst){
+              var month = $(this).parent().find(".month").val();
+              var date = $(this).parent().find(".day").val();
+              $(this).datepicker( "setDate" , month + "/" + date);
+            },
+          onSelect:
+            function(dateText, inst){
+              var mm = '';
+              var dates = dateText.split('/');
+              var month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+              console.log(dates[0])
+              for( var i = 0; i <= 12; i++){
+                if( i == parseInt(dates[0]) ){
+                  mm = month[i - 1];
+                  $(this).parent().find(".month").val(mm);
+                }
+              }
+              $(this).parent().find(".day").val(dates[1]);
+          }
+        });
+      }else{
+        $('.picker').datepicker({
+          minDate:'0y',
+          maxDate:'6m',
+          showButtonPanel:true,
+          numberOfMonths:2,
+          dayNamesShort: ['S','M','T','W','T','F','S'],
+          dayNamesMin: ['S','M','T','W','T','F','S'],
+          closeText:'Close',
+          beforeShow:
+          function(input,inst){
+            var month = $(this).parent().find(".month").val();
+            var date = $(this).parent().find(".day").val();
+            $(this).datepicker( "setDate" , month + "/" + date);
+          },
+          onSelect:
+          function(dateText, inst){
+            var mm = '';
+            var dates = dateText.split('/');
+            var month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+            console.log(dates[0])
+            for( var i = 0; i <= 12; i++){
+              if( i == parseInt(dates[0]) ){
+                mm = month[i - 1];
+                $(this).parent().find(".month").val(mm);
+              }
+            }
+            $(this).parent().find(".day").val(dates[1]);
+          }
+        });
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    //Smooth Scroll Script
+    $(function(){
+      $('a[href*="#"]').click(function() {
+        var speed = 400;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({scrollTop:position}, speed);
+        return false;
+      });
+    });
+  </script>
+  <!-- DatePicker -->
+</body>
+</html>

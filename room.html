@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="One of Victoria&#039;s Finest, Marketa&#039;s B&amp;B is located steps from the Inner Harbour and Downtown Victoria, Vancouver Island, BC - Reservations - 250-384-9844"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>Marketa's Bed & Breakfast in Downtown Victoria BC, British Columbia</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <!-- Date Reset Function -->
+  <script>
+    window.onload = function(){
+      var mm = '';
+      var ddi = 1;
+      var ddo = 1;
+      var month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      var now = new Date();
+      for( var i = 0; i < 12; i++){
+        if( i == now.getMonth() ){
+          mm = month[i];
+          document.getElementById('in-month').value = mm;
+          document.getElementById('out-month').value = mm;
+          break;
+        }
+      }
+      ddi = ("0" + now.getDate()).slice(-2);
+      ddo = ("0" + (now.getDate() + 1)).slice(-2);
+      document.getElementById('in-day').value = ddi;
+      document.getElementById('out-day').value = ddo;
+      console.log(mm);
+    }
+  </script>
+  <!-- Date Reset Function -->
+</head>
+<body class="subPage">
+  <div class="mainVisual">
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1><img src="img/logo-wh.svg" alt="Marketa's Bed & Breakfast"></h1>
+        </a>
+      </div>
+      <nav>
+        <input type="radio" id="spBtn__off" name="btn" checked>
+        <input type="radio" id="spBtn__on" name="btn">
+        <div class="spNav sp">
+          <ul>
+            <li>
+              <a class="spNav__fb" href="https://www.facebook.com/MarketasBedandBreakfast/" target="_blank"></a>
+            </li>
+            <li>
+              <a class="spNav__tw" href="https://twitter.com/MissMarketa" target="_blank"></a>
+            </li>
+            <li><label class="navBtnSp" for="spBtn__on"></label></li>
+          </ul>
+        </div>
+        <ul class="nav__body">
+          <li class="nav__list close sp">
+            <label for="spBtn__off"></label>
+          </li>
+          <li class="nav__list">
+            <a href="index.html">HOME</a>
+          </li>
+          <li class="nav__list">
+            <a class="nav__line nav__line--room" href="room.html">ROOM &amp; RATES</a>
+          </li>
+          <li class="nav__list">
+            <a href="">BREAKFAST</a>
+          </li>
+          <li class="nav__list">
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="book">
+      <h2 class="bookHd">BOOK NOW <span class="bookHd__span">BEST PRICE ONLINE</span></h2>
+      <div class="book__box">
+        <div class="date">
+          <div class="in">
+            <h3>CHECK IN</h3>
+            <input id="in-day" class="day" type="text" value="" readonly>
+            <input id="in-month" class="month" type="text" value="" readonly>
+            <input type="text" class="picker" value="" readonly>
+          </div>
+          <div class="out">
+            <h3>CHECK OUT</h3>
+            <input id="out-day" class="day" type="text" value="" readonly>
+            <input id="out-month" class="month" type="text" value="" readonly>
+            <input type="text" class="picker" value="" readonly>
+          </div>
+        </div>
+        <div class="btn">
+          <a href="#">CHECK AVAILABLITY<span>BEST PRICE GARANTEED</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="main">
+    <section class="about">
+      <h2 class="main__heading heading__underLine heading__underLine--red heading__underLine--rooms">Rooms & Rates</h2>
+      <p class="main__text">
+        At Marketa’s Bed and Breakfast you will find Edwardian comfort at every turn. The warmth of wood, from paneled walls to four poster beds (ornately decorated by Marketa herself) infuses this bed and breakfast treat with its calming influence. Each room is individually decorated and has special features and personal touches (including Marketa’s own artwork).Whether you are visiting us on a family break, a romantic getaway, or business, our uniquely decorated rooms will enchant you. We have rooms to fit most budgets and can accommodate various size groups of all age’s even our younger guests are catered to with baby cribs and rollaway beds.For that special weekend Marketa’s Bed and Breakfast invites you to try one of our feature rooms. Experience the luxury of a beautiful four-poster bed, fireplace and jetted tub in our Edwardian heritage house.
+      </p>
+      <p class="main__text">
+        Choose from private or shared baths and queen or four-poster beds. Our B&B accommodations offer the personal service and ambience of a bed and breakfast that our guests expect with an inn’s charm.
+      </p>
+    </section>
+    <section class="history">
+      <div class="main__box main__box--hsty">
+        <div class="box__img box__img--hsty">
+          <img class="pc" src="img/history-img.jpg" alt="history of marketa's B&B">
+          <img class="pc-none" src="img/history-img2.png" alt="history of marketa's B&B">
+        </div>
+        <div class="box__text box__text--hsty">
+          <h2 class="main__heading main__heading--wh heading__underLine heading__underLine--hsty heading__underLine--blue">history</h2>
+          <p class="box__paragraph box__paragraph--wh">
+            Marketa opened her B&B Victoria BC in 1996. With the help of her young son Jacob and Mr. T the lovable family dog (a real character!) she runs a warm and friendly hostelry accommodation with European flair, close to downtown Victoria. Her love of cooking is obvious to anyone who has sampled her gourmet breakfasts, which are a favourite of guests.
+          </p>
+          <p class="box__paragraph box__paragraph--wh">
+            This beautiful Edwardian mansion was built in 1912. The first owner of the house was a widow with four children who bought it because she wanted something smaller. She was obviously wealthy because, even by today’s standards, the house is large.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="review">
+      <hgroup>
+        <h2 class="main__heading heading__underLine heading__underLine--red heading__underLine--rvw">reviews</h2>
+        <h3 class="review__heading">As written up in Country Pleasures Magazine <span>- By Mary Mendoza</span></h3>
+      </hgroup>
+      <div class="main__box main__box--review">
+        <div class="review__text">
+          <p class="box__paragraph mg0">
+            The odds of me ever getting to Prague are about the same as Martha Stewart swimming the English Channel clad only in a KMart towel. Happily I can experience some of the flavor of that beautiful Czech city with a visit to Marketa’s Bed and Breakfast in Victoria.
+          </p>
+          <p class="box__paragraph  mg0">
+            Marketa’s possesses the qualities one might find in a small Eastern European inn–at bargain prices. Its complete lack of pretentiousness and fun-filled atmosphere put it on the top of my list of favorite places to stay in Victoria.
+          </p>
+          <p class="box__paragraph  mg0">
+            Then there is the woman behind it all, innkeeper Marketa Clark. A stunning Czech native, married to a Canadian computer-guru and mother to a young son, Marketa devotes her spare time to her great passion – painting. She is an accomplished artist whose works have appeared in galleries in Europe and British Columbia. A number of her original oil paintings are displayed at the B&B.
+          </p>
+          <div>
+            <a class="box__btn box__btn--dkbl" href="review.html">READ MORE</a>
+          </div>
+        </div>
+        <div class="review__img">
+          <img src="img/trip-advisor-2014.png" alt="trip advisor 2014 winner">
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="main__heading main__heading--contact heading__underLine heading__underLine--red heading__underLine--cnt">contact us</h2>
+      <form class="form" action="javascript:void(0);">
+        <label for="">
+          <input class="cont__ipt cont__ipt--name" type="text" placeholder="YOUR NAME">
+        </label>
+        <label for="">
+          <input class="cont__ipt" type="email" placeholder="E-MAIL ADDRESS">
+        </label>
+        <label for="">
+          <input class="cont__ipt" type="tel" placeholder="YOUR PHONE NUMBER">
+        </label>
+        <textarea class="cont__ipt" placeholder="YOUR MESSAGE"></textarea>
+        <button class="box__btn box__btn--wh" type="submit">SUBMIT</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="ft__logo">
+      <img src="img/logo-bk.svg" alt="Marketa's Bed & Breakfast">
+    </div>
+    <address>
+      <dl>
+        <dt>Marketa’s Bed and Breakfast</dt>
+        <dd>239 Superior St., Victoria, BC V8V 1T4, Canada</dd>
+        <dd>250-384-984</dd>
+      </dl>
+    </address>
+    <div class="sns">
+      <ul>
+        <li>
+          <a href="">
+            <img src="img/fb-ico.svg" alt="facebook">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/tw-ico.svg" alt="twitter">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- DatePicker -->
+  <script>
+    $(function(){
+      if($(window).width() < 960 ){
+        $('.picker').datepicker({
+          minDate:'0y',
+          maxDate:'6m',
+          showButtonPanel:true,
+          numberOfMonths:1,
+          dayNamesShort: ['S','M','T','W','T','F','S'],
+          dayNamesMin: ['S','M','T','W','T','F','S'],
+          closeText:'Close',
+          beforeShow:
+            function(input,inst){
+              var month = $(this).parent().find(".month").val();
+              var date = $(this).parent().find(".day").val();
+              $(this).datepicker( "setDate" , month + "/" + date);
+            },
+          onSelect:
+            function(dateText, inst){
+              var mm = '';
+              var dates = dateText.split('/');
+              var month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+              console.log(dates[0])
+              for( var i = 0; i <= 12; i++){
+                if( i == parseInt(dates[0]) ){
+                  mm = month[i - 1];
+                  $(this).parent().find(".month").val(mm);
+                }
+              }
+              $(this).parent().find(".day").val(dates[1]);
+          }
+        });
+      }else{
+        $('.picker').datepicker({
+          minDate:'0y',
+          maxDate:'6m',
+          showButtonPanel:true,
+          numberOfMonths:2,
+          dayNamesShort: ['S','M','T','W','T','F','S'],
+          dayNamesMin: ['S','M','T','W','T','F','S'],
+          closeText:'Close',
+          beforeShow:
+          function(input,inst){
+            var month = $(this).parent().find(".month").val();
+            var date = $(this).parent().find(".day").val();
+            $(this).datepicker( "setDate" , month + "/" + date);
+          },
+          onSelect:
+          function(dateText, inst){
+            var mm = '';
+            var dates = dateText.split('/');
+            var month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+            console.log(dates[0])
+            for( var i = 0; i <= 12; i++){
+              if( i == parseInt(dates[0]) ){
+                mm = month[i - 1];
+                $(this).parent().find(".month").val(mm);
+              }
+            }
+            $(this).parent().find(".day").val(dates[1]);
+          }
+        });
+      }
+    });
+  </script>
+  <!-- DatePicker -->
+</body>
+</html>

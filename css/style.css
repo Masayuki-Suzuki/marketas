@@ -1,0 +1,1138 @@
+/**************************
+       Initializing
+**************************/
+@font-face {
+  font-family: 'fontawesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#fontawesome") format("svg");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Cabin";
+  font-weight: 300;
+}
+
+h1, h2, h3, p, ul, li, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+ul, li, dl, dt, dd {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main__heading {
+  font-size: 3.6rem;
+  color: #444;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+}
+
+.main__heading--wh {
+  color: #fff;
+}
+
+.main__heading--contact {
+  color: #fff;
+  margin: auto;
+  width: 7em;
+}
+
+.heading__underLine {
+  position: relative;
+}
+
+.heading__underLine:after {
+  bottom: -3px;
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.heading__underLine--red:after {
+  border-bottom: solid 3px #e51552;
+}
+
+.heading__underLine--blue:after {
+  border-bottom: solid 3px #0B2354;
+}
+
+.heading__underLine--about:after {
+  width: 70px;
+}
+
+.heading__underLine--hsty:after {
+  width: 57px;
+}
+
+.heading__underLine--rvw:after {
+  width: 65px;
+}
+
+.heading__underLine--cnt:after {
+  width: 75px;
+}
+
+.heading__underLine--rooms:after {
+  width: 75px;
+}
+
+.main__box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.main__box--review {
+  margin: 0 auto;
+  max-width: 960px;
+  align-items: flex-start;
+}
+
+.box__img img {
+  display: block;
+  width: 100%;
+}
+
+.box__img--hsty {
+  width: 43.333333333333336%;
+}
+
+.box__img--hsty img {
+  max-width: 520px;
+}
+
+.box__text--hsty {
+  margin: 15px auto 0;
+  max-width: 470px;
+  width: 100%;
+}
+
+.box__paragraph {
+  color: #999;
+  font-size: 1.8rem;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  margin: 0 0 1em;
+  text-align: justify;
+}
+
+.box__paragraph--wh {
+  color: #fff;
+}
+
+.box__paragraph.mg0 {
+  margin: 0;
+}
+
+.box__btn {
+  background: transparent;
+  border-style: solid;
+  border-width: 3px;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin: 20px auto 0;
+  padding: 19px 0;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  width: 200px;
+}
+
+.box__btn--dkbl {
+  border-color: #0B2354;
+  color: #0B2354;
+}
+
+.box__btn--dkbl:hover {
+  background: #0B2354;
+  color: #fff;
+}
+
+.box__btn--wh {
+  border-color: #fff;
+  color: #fff;
+}
+
+.box__btn--wh:hover {
+  background: #e51552;
+  border-color: #e51552;
+}
+
+input[id*="spBtn"] {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+/*************************
+       mainVisual
+**************************/
+.mainVisual {
+  background: url(../img/kv-bg.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 40px 40px 84px;
+}
+
+header {
+  display: table;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.logo, nav {
+  display: table-cell;
+  vertical-align: top;
+}
+
+nav {
+  padding: 42px 0 0;
+}
+
+.nav__body {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__list {
+  padding: 0 12px;
+}
+
+.nav__list > a {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  transition: color 0.4s ease 0s;
+}
+
+.nav__list > a:active, .nav__list > a:link, .nav__list > a:visited {
+  color: #fff;
+}
+
+.nav__list > a:hover {
+  color: #e51552;
+}
+
+.nav__line {
+  display: block;
+  position: relative;
+}
+
+.nav__line:after {
+  border-bottom: solid 2px #e51552;
+  bottom: -4px;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+}
+
+.nav__line--home:after {
+  width: 24px;
+}
+
+.nav__line--room:after {
+  width: 38px;
+}
+
+/*************************
+       Booking System
+**************************/
+.book {
+  margin: 297px auto 0;
+  width: 600px;
+  transition: all 0.4s ease 0s;
+}
+
+.bookHd {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin: 0 0 7px;
+}
+
+.bookHd__span {
+  font-size: 1.6rem;
+  padding: 0 0 0 5px;
+}
+
+.book__box {
+  align-items: center;
+  background: rgba(0, 160, 255, 0.9);
+  display: flex;
+  width: 100%;
+}
+
+.date {
+  display: flex;
+  width: 50%;
+}
+
+.in, .out {
+  background: #f0f0f0;
+  padding: 16px;
+  position: relative;
+  width: 50%;
+}
+
+.in h3, .out h3 {
+  font-size: 1.4rem;
+  color: #999;
+  letter-spacing: 0.04em;
+  text-align: center;
+  width: 100%;
+}
+
+.in input, .out input {
+  background: transparent;
+  border: none;
+  color: #999;
+  display: block;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.in:after {
+  background: #ccc;
+  content: "";
+  display: block;
+  height: 90px;
+  margin: -45px 0 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+}
+
+.day {
+  font-size: 5rem;
+  letter-spacing: 0;
+  margin: 5px 0 0;
+}
+
+.month {
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+}
+
+.picker {
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.btn {
+  text-align: center;
+  width: 50%;
+}
+
+.btn > a {
+  background: #0B2354;
+  color: #fff;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 250px;
+}
+
+.btn > a span {
+  color: #9798B3;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+/*************************
+       Calendar Style
+**************************/
+.ui-datepicker.ui-datepicker-multi {
+  width: auto !important;
+}
+
+.ui-datepicker.ui-datepicker-multi .ui-datepicker-group table {
+  margin: 10px 15px .4em;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  padding: 35px 0 32px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  font-size: 2.4rem;
+  line-height: 1;
+  margin: 0;
+  width: 100%;
+}
+
+.ui-datepicker th {
+  font-weight: 500;
+}
+
+.ui-corner-all {
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-widget-header {
+  background: #00A0FF;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+
+.ui-widget {
+  font-family: "Cabin";
+  font-size: 1.6rem;
+}
+
+.ui-widget-content {
+  color: #00A0FF;
+}
+
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3333333333333%;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+  background: none;
+  border: solid 1px transparent;
+  padding: 11px 10px 10px 10px;
+  text-align: center;
+  width: 41px;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  border: solid 1px #00A0FF;
+  border-radius: 50%;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active {
+  border: solid 1px #bbb;
+  border-radius: 50%;
+}
+
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+  font-weight: 500;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  background: none;
+  border: solid 1px #e51552;
+  border-radius: 50%;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  height: 30px;
+  margin: -14px 0 0;
+  top: 50%;
+  width: 30px;
+}
+
+.ui-icon-circle-triangle-w {
+  margin: -15px 0 0 -5px !important;
+}
+
+.ui-icon-circle-triangle-w:after {
+  color: #fff;
+  content: "\f104";
+  font-size: 3rem;
+  font-family: "fontawesome";
+  left: 0;
+  position: absolute;
+  text-align: center;
+  text-indent: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.ui-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.ui-icon-circle-triangle-e {
+  margin: -15px 0 0 -15px !important;
+}
+
+.ui-icon-circle-triangle-e:after {
+  color: #fff;
+  content: "\f105";
+  font-size: 3rem;
+  font-family: "fontawesome";
+  left: 50%;
+  margin: -16px 0 0 -12px;
+  position: absolute;
+  text-align: center;
+  text-indent: 0;
+  top: 50%;
+  width: 100%;
+  z-index: 100;
+}
+
+.ui-widget-header .ui-icon {
+  background: none;
+  display: block;
+}
+
+.ui-datepicker .ui-datepicker-prev span {
+  position: static;
+}
+
+/*************************
+       About Section
+**************************/
+.about {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 100px 0;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+}
+
+.main__text {
+  font-size: 1.8rem;
+  color: #999;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  margin: 0 0 1em;
+  text-align: justify;
+}
+
+/*************************
+      History Section
+**************************/
+.history {
+  background: #00a0ff;
+  transition: all 0.5s ease 0s;
+}
+
+/*************************
+      Reviews Section
+**************************/
+.review {
+  background: #f0f0f0;
+  padding: 80px 0;
+  transition: all 0.5s ease 0s;
+}
+
+.review__heading {
+  color: #444;
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin: 50px 0 0;
+}
+
+.review__heading span {
+  display: inline-block;
+  margin: 7px 0 0;
+}
+
+.review__text {
+  padding: 0 40px 0 0;
+  max-width: 560px;
+  width: 50%;
+}
+
+.review__img img {
+  width: 100%;
+}
+
+hgroup {
+  margin: 0 auto 27px;
+  max-width: 960px;
+  width: 100%;
+}
+
+/*************************
+      Contact Section
+**************************/
+.contact {
+  background: url(../img/contact-bg.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 85px 0 100px;
+}
+
+.form {
+  margin: 75px auto 0;
+  max-width: 480px;
+  width: 100%;
+}
+
+.form > label {
+  display: block;
+  margin: 55px 0 0;
+}
+
+.form > textarea {
+  display: block;
+  margin: 55px 0 45px;
+  min-height: 200px;
+}
+
+.cont__ipt {
+  background: transparent;
+  border: none;
+  border-bottom: solid 2px #fff;
+  color: #fff;
+  font-size: 2.4rem;
+  letter-spacing: 0.04em;
+  outline: none;
+  padding: 0 0 4px;
+  width: 100%;
+}
+
+.cont__ipt::-webkit-input-placeholder {
+  color: #e5e5e5;
+}
+
+.cont__ipt:-moz-placeholder {
+  color: #e5e5e5;
+  opacity: 1;
+}
+
+.cont__ipt::-moz-placeholder {
+  color: #e5e5e5;
+  opacity: 1;
+}
+
+.cont__ipt:-ms-input-placeholder {
+  color: #e5e5e5;
+}
+
+.cont__ipt:placeholder-shown {
+  color: #e5e5e5;
+  opacity: 1;
+}
+
+.cont__ipt--name {
+  text-transform: capitalize;
+}
+
+/*************************
+         Footer
+**************************/
+footer {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  padding: 36px 40px 37px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+address {
+  padding: 5px 0 0 30px;
+  font-style: normal;
+  width: 100%;
+}
+
+address dt {
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin: 0 0 7px;
+}
+
+address dd {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  margin: 0 0 5px;
+}
+
+address dd:last-of-type {
+  margin: 0;
+}
+
+.sns > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90px;
+}
+
+.pc {
+  position: static;
+  opacity: 1;
+}
+
+.pc-none, .sp {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  opacity: 0;
+}
+
+@media (max-width: 1024px) {
+  .about {
+    padding: 60px 40px;
+  }
+  .review {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  .book {
+    margin: 200px auto 0;
+  }
+  .day {
+    font-size: 3.4rem;
+  }
+  .main__box--hsty {
+    padding: 40px;
+  }
+  .main__box--review {
+    margin: 0 auto;
+    max-width: 960px;
+    align-items: flex-start;
+  }
+  .box__text--hsty {
+    margin: 15px auto 0;
+    max-width: 470px;
+    padding: 0 0 0 30px;
+    width: 60%;
+  }
+  .review__text {
+    padding: 0 40px 0 0;
+    max-width: 560px;
+    width: 80%;
+  }
+  .pc {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    opacity: 0;
+  }
+  .pc-none {
+    position: static;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+  .logo, nav {
+    display: block;
+  }
+  nav {
+    padding: 42px 0 0;
+  }
+  .nav__body {
+    justify-content: space-between;
+  }
+  .book {
+    margin: 160px auto 0;
+  }
+  .bookHd {
+    font-size: 3.4rem;
+  }
+  .day {
+    font-size: 3rem;
+  }
+  .about {
+    padding: 40px;
+  }
+  .main__box--hsty {
+    flex-direction: column-reverse;
+    padding: 40px;
+  }
+  .box__text--hsty {
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  .box__img--hsty {
+    width: 85%;
+  }
+  .main__box--review {
+    flex-direction: column;
+  }
+  .review__text, .review__img {
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  .review__text {
+    margin: 0 0 30px;
+  }
+  .review__img {
+    text-align: center;
+  }
+  .review__img img {
+    width: 50%;
+  }
+  address dt {
+    font-size: 2rem;
+  }
+  address dd {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .spNav {
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    left: 0 !important;
+    position: fixed !important;
+    transition: all 0.4s ease 0.2s;
+    width: 100%;
+  }
+  .spNav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .spNav ul li {
+    width: 33.3333333333%;
+  }
+  .spNav ul li a {
+    display: block;
+    line-height: 1;
+    padding: 13px 0;
+    text-align: center;
+  }
+  .spNav__fb, .spNav__tw {
+    text-decoration: none;
+  }
+  .spNav__fb:before, .spNav__tw:before {
+    color: #fff;
+    display: block;
+    font-family: "fontawesome";
+    font-size: 2.3rem;
+    margin: auto;
+  }
+  .spNav__fb:before {
+    content: "\f09a";
+  }
+  .spNav__tw:before {
+    content: "\f099";
+  }
+  .navBtnSp {
+    display: block;
+    padding: 13px 0;
+    text-align: center;
+  }
+  .navBtnSp:after {
+    color: #fff;
+    content: "\f0c9";
+    display: block;
+    font-family: "fontawesome";
+    font-size: 2.4rem;
+    margin: auto;
+  }
+  .nav__body {
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: flex-start;
+    left: 15%;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0px 0 0;
+    position: fixed;
+    top: 15%;
+    transition: all 0.3s ease 0s;
+    width: 70%;
+    z-index: -1;
+  }
+  #spBtn__on:checked ~ .nav__body {
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0px 0 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+  }
+  #spBtn__on:checked ~ .spNav {
+    bottom: -100%;
+  }
+  .nav__list {
+    margin: 0px 0 0;
+    text-align: center;
+  }
+  .nav__list.close {
+    position: absolute;
+    right: 5px;
+    top: 0;
+  }
+  .nav__list.close label {
+    display: block;
+    padding: 10px;
+  }
+  .nav__list.close label:before {
+    color: #fff;
+    content: "\f00d";
+    display: block;
+    font-size: 4rem;
+    font-family: "fontawesome";
+  }
+  .nav__list img {
+    margin: auto;
+    width: 80px;
+  }
+  .nav__list a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .nav__list a:hover {
+    color: #fff;
+  }
+  .heading__underLine--about:after {
+    width: 55px;
+  }
+  .heading__underLine--hsty:after {
+    width: 45px;
+  }
+  .heading__underLine--rvw:after {
+    width: 52px;
+  }
+  .heading__underLine--cnt:after {
+    width: 59px;
+  }
+  .mainVisual {
+    padding: 40px 20px;
+  }
+  .book {
+    margin: 30px auto 0;
+    width: 280px;
+  }
+  .bookHd {
+    font-size: 2.4rem;
+  }
+  .bookHd__span {
+    font-size: 1.2rem;
+  }
+  .book__box {
+    background: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .in, .out {
+    background: rgba(240, 240, 240, 0.8);
+  }
+  .in h3, .in input, .out h3, .out input {
+    color: #444;
+  }
+  .date {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
+  .btn > a {
+    background: rgba(11, 35, 84, 0.8);
+    width: 100%;
+  }
+  .ui-state-default,
+  .ui-widget-content .ui-state-default {
+    padding: 8px 10px 8px 10px;
+    width: 36px;
+  }
+  .ui-datepicker .ui-datepicker-title {
+    font-size: 2rem;
+  }
+  .ui-datepicker .ui-datepicker-header {
+    padding: 15px 0;
+  }
+  .about {
+    padding: 25px 30px 15px;
+  }
+  .main__heading {
+    font-size: 2.8rem;
+    margin: 0 0 20px;
+  }
+  .main__text {
+    font-size: 1.4rem;
+  }
+  .box__paragraph {
+    font-size: 1.4rem;
+  }
+  .main__box--hsty {
+    padding: 15px 30px;
+  }
+  .review {
+    padding: 30px;
+  }
+  .review__heading {
+    font-size: 1.8rem;
+    margin: 20px 0 0;
+  }
+  hgroup {
+    margin: 0 auto 15px;
+  }
+  .box__btn {
+    font-size: 1.6rem;
+    padding: 13px 0;
+    width: 170px;
+  }
+  .review__img img {
+    width: 70%;
+  }
+  .contact {
+    padding: 40px 20px;
+  }
+  .form {
+    margin: 40px auto 0;
+  }
+  .form > label {
+    margin: 25px 0 0;
+  }
+  .form > textarea {
+    margin: 25px 0 45px;
+    min-height: 150px;
+  }
+  .cont__ipt {
+    font-size: 1.8rem;
+  }
+  footer {
+    padding: 20px 20px 60px;
+    flex-direction: column;
+  }
+  address {
+    margin: 20px 0;
+    padding: 0px;
+    text-align: center;
+  }
+  address dt {
+    font-size: 1.6rem;
+  }
+  address dd {
+    font-size: 1.3rem;
+  }
+  /****************************
+        Display Control
+  ****************************/
+  .pc {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    opacity: 0;
+  }
+  .sp {
+    position: static;
+    left: auto;
+    top: auto;
+    opacity: 1;
+  }
+}
+
+.subPage .mainVisual {
+  padding: 40px;
+}
+
+.subPage .book {
+  margin: 60px auto 0;
+}
+
+.subPage .book__box {
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.subPage .bookHd {
+  font-size: 2.4rem;
+}
+
+.subPage .bookHd__span {
+  font-size: 1.6rem;
+}
+
+.subPage .day {
+  font-size: 2.4rem;
+}
+
+.more .main__box--review {
+  flex-direction: column;
+}
+
+.more .review__text {
+  max-width: 100%;
+  width: 100%;
+}
+
+.more .review__img {
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+.more .review__img > div {
+  margin: 50px 0 0;
+}
+
+.map__wrap {
+  position: relative;
+}
+
+.map__wrap span {
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}

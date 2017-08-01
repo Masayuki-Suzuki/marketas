@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="One of Victoria&#039;s Finest, Marketa&#039;s B&amp;B is located steps from the Inner Harbour and Downtown Victoria, Vancouver Island, BC - Reservations - 250-384-9844"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>Marketa's Bed & Breakfast in Downtown Victoria BC, British Columbia</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <!-- Date Reset Function -->
+  <script>
+    window.onload = function(){
+      var mm = '';
+      var ddi = 1;
+      var ddo = 1;
+      var month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      var now = new Date();
+      for( var i = 0; i < 12; i++){
+        if( i == now.getMonth() ){
+          mm = month[i];
+          document.getElementById('in-month').value = mm;
+          document.getElementById('out-month').value = mm;
+          break;
+        }
+      }
+      ddi = ("0" + now.getDate()).slice(-2);
+      ddo = ("0" + (now.getDate() + 1)).slice(-2);
+      document.getElementById('in-day').value = ddi;
+      document.getElementById('out-day').value = ddo;
+      console.log(mm);
+    }
+  </script>
+  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <!-- Date Reset Function -->
+</head>
+<body class="subPage"  onload="initialize();">
+  <div class="mainVisual">
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1><img src="img/logo-wh.svg" alt="Marketa's Bed & Breakfast"></h1>
+        </a>
+      </div>
+      <nav>
+        <input type="radio" id="spBtn__off" name="btn" checked>
+        <input type="radio" id="spBtn__on" name="btn">
+        <div class="spNav sp">
+          <ul>
+            <li>
+              <a class="spNav__fb" href="https://www.facebook.com/MarketasBedandBreakfast/" target="_blank"></a>
+            </li>
+            <li>
+              <a class="spNav__tw" href="https://twitter.com/MissMarketa" target="_blank"></a>
+            </li>
+            <li><label class="navBtnSp" for="spBtn__on"></label></li>
+          </ul>
+        </div>
+        <ul class="nav__body">
+          <li class="nav__list close sp">
+            <label for="spBtn__off"></label>
+          </li>
+          <li class="nav__list">
+            <a href="index.html">HOME</a>
+          </li>
+          <li class="nav__list">
+            <a href="room.html">ROOM &amp; RATES</a>
+          </li>
+          <li class="nav__list">
+            <a href="">BREAKFAST</a>
+          </li>
+          <li class="nav__list">
+            <a class="nav__line nav__line--home" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="book">
+      <h2 class="bookHd">BOOK NOW <span class="bookHd__span">BEST PRICE ONLINE</span></h2>
+      <div class="book__box">
+        <div class="date">
+          <div class="in">
+            <h3>CHECK IN</h3>
+            <input id="in-day" class="day" type="text" value="" readonly>
+            <input id="in-month" class="month" type="text" value="" readonly>
+            <input type="text" class="picker" value="" readonly>
+          </div>
+          <div class="out">
+            <h3>CHECK OUT</h3>
+            <input id="out-day" class="day" type="text" value="" readonly>
+            <input id="out-month" class="month" type="text" value="" readonly>
+            <input type="text" class="picker" value="" readonly>
+          </div>
+        </div>
+        <div class="btn">
+          <a href="#">CHECK AVAILABLITY<span>BEST PRICE GARANTEED</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="main">
+   <div class="map__wrap">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.8800415982423!2d-123.37997053981665!3d48.420447272952174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f7497ff7b93d9%3A0x3d864f6ff6a9da52!2zMjM5IFN1cGVyaW9yIFN0LCBWaWN0b3JpYSwgQkMgVjhWIDFUNCDjgqvjg4rjg4A!5e0!3m2!1sja!2sjp!4v1473362893512" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+     <span></span>
+   </div>
+    <section id="contact" class="contact">
+      <h2 class="main__heading main__heading--contact heading__underLine heading__underLine--red heading__underLine--cnt">contact us</h2>
+      <form class="form" action="javascript:void(0);">
+        <label for="">
+          <input class="cont__ipt cont__ipt--name" type="text" placeholder="YOUR NAME">
+        </label>
+        <label for="">
+          <input class="cont__ipt" type="email" placeholder="E-MAIL ADDRESS">
+        </label>
+        <label for="">
+          <input class="cont__ipt" type="tel" placeholder="YOUR PHONE NUMBER">
+        </label>
+        <textarea class="cont__ipt" placeholder="YOUR MESSAGE"></textarea>
+        <button class="box__btn box__btn--wh" type="submit">SUBMIT</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="ft__logo">
+      <img src="img/logo-bk.svg" alt="Marketa's Bed & Breakfast">
+    </div>
+    <address>
+      <dl>
+        <dt>Marketa’s Bed and Breakfast</dt>
+        <dd>239 Superior St., Victoria, BC V8V 1T4, Canada</dd>
+        <dd>250-384-984</dd>
+      </dl>
+    </address>
+    <div class="sns">
+      <ul>
+        <li>
+          <a href="">
+            <img src="img/fb-ico.svg" alt="facebook">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/tw-ico.svg" alt="twitter">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- DatePicker -->
+  <script>
+    $(function(){
+      if($(window).width() < 960 ){
+        $('.picker').datepicker({
+          minDate:'0y',
+          maxDate:'6m',
+          showButtonPanel:true,
+          numberOfMonths:1,
+          dayNamesShort: ['S','M','T','W','T','F','S'],
+          dayNamesMin: ['S','M','T','W','T','F','S'],
+          closeText:'Close',
+          beforeShow:
+            function(input,inst){
+              var month = $(this).parent().find(".month").val();
+              var date = $(this).parent().find(".day").val();
+              $(this).datepicker( "setDate" , month + "/" + date);
+            },
+          onSelect:
+            function(dateText, inst){
+              var mm = '';
+              var dates = dateText.split('/');
+              var month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+              console.log(dates[0])
+              for( var i = 0; i <= 12; i++){
+                if( i == parseInt(dates[0]) ){
+                  mm = month[i - 1];
+                  $(this).parent().find(".month").val(mm);
+                }
+              }
+              $(this).parent().find(".day").val(dates[1]);
+          }
+        });
+      }else{
+        $('.picker').datepicker({
+          minDate:'0y',
+          maxDate:'6m',
+          showButtonPanel:true,
+          numberOfMonths:2,
+          dayNamesShort: ['S','M','T','W','T','F','S'],
+          dayNamesMin: ['S','M','T','W','T','F','S'],
+          closeText:'Close',
+          beforeShow:
+          function(input,inst){
+            var month = $(this).parent().find(".month").val();
+            var date = $(this).parent().find(".day").val();
+            $(this).datepicker( "setDate" , month + "/" + date);
+          },
+          onSelect:
+          function(dateText, inst){
+            var mm = '';
+            var dates = dateText.split('/');
+            var month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+            console.log(dates[0])
+            for( var i = 0; i <= 12; i++){
+              if( i == parseInt(dates[0]) ){
+                mm = month[i - 1];
+                $(this).parent().find(".month").val(mm);
+              }
+            }
+            $(this).parent().find(".day").val(dates[1]);
+          }
+        });
+      }
+    });
+  </script>
+  <!-- DatePicker -->
+  <script type="text/javascript">
+    //Smooth Scroll Script
+    $(function(){
+      $('a[href*="#"]').click(function() {
+        var speed = 400;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({scrollTop:position}, speed);
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>
